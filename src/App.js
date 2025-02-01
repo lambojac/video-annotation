@@ -4,10 +4,11 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
-// import VideoUpload from './pages/VideoUpload';
+import VideoUpload from './pages/VideoUpload/VideoUpload';
+import VideoAnalysis from './pages/VideoAnalysis/VideoAnalysis';
 // import Annotations from './pages/Annotations';
 // import Notifications from './pages/Notifications';
-// import SideBySide from './pages/SideBySide';
+
 // import Navbar from './components/Navbar';
 
 function App() {
@@ -28,10 +29,11 @@ function App() {
         <Route path="/login" element={<Login/>}/> 
         <Route path="/" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
-        {/* <Route path="/upload" element={user ? <VideoUpload /> : <Navigate to="/login" />} />
-        <Route path="/annotations" element={user ? <Annotations /> : <Navigate to="/login" />} />
+      <Route path="/upload" element={<VideoUpload />} />
+      <Route path="/anotation" element={<VideoAnalysis/>} /> 
+         {/*  <Route path="/annotations" element={user ? <Annotations /> : <Navigate to="/login" />} />
         <Route path="/notifications" element={user ? <Notifications /> : <Navigate to="/login" />} />
-        <Route path="/side-by-side" element={user ? <SideBySide /> : <Navigate to="/login" />} /> */} 
+        */} 
       </Routes>
     </Router>
   );
