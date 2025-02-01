@@ -6,8 +6,9 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
 import VideoUpload from './pages/VideoUpload/VideoUpload';
 import VideoAnalysis from './pages/VideoAnalysis/VideoAnalysis';
+import Notifications from './pages/Notifications/Notifications';
 // import Annotations from './pages/Annotations';
-// import Notifications from './pages/Notifications';
+
 
 // import Navbar from './components/Navbar';
 
@@ -31,8 +32,9 @@ function App() {
         <Route path="/profile" element={<Profile />} />
       <Route path="/upload" element={<VideoUpload />} />
       <Route path="/anotation" element={<VideoAnalysis/>} /> 
+      <Route path="/notifications" element={<Notifications /> }/>
          {/*  <Route path="/annotations" element={user ? <Annotations /> : <Navigate to="/login" />} />
-        <Route path="/notifications" element={user ? <Notifications /> : <Navigate to="/login" />} />
+        
         */} 
       </Routes>
     </Router>
