@@ -16,7 +16,7 @@ const Dashboard = () => {
           <FaBell className="icon" />
           <FaUserCircle className="icon" />
           <button className="help-btn">
-            <FaQuestionCircle /> HELP
+            <FaQuestionCircle /> HELP and faq
           </button>
         </div>
       </div>
